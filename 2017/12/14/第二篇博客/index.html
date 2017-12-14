@@ -5,15 +5,18 @@
   
 
   
-  <title>开博大吉 | Miffy Chen&#39;Blog</title>
+  <title>win10上利用hexo与github写博客 | Miffy Chen&#39;Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="开博大吉">
-<meta property="og:url" content="http://yoursite.com/2017/12/14/开博大吉/index.html">
+  <meta name="description" content="安装Hexo第一步是安装Node.js(之前已经安装过了，可以利用cnpm安装hexo） npm install -g cnpm --registry=https://registry.npm.taobao.org 1. cd ~/Desktop 2. 在 GitHub 上新建一个空 repo，repo 名称是「你的用户名.github.io」 3. cnpm install -g hexo-cl">
+<meta property="og:type" content="article">
+<meta property="og:title" content="win10上利用hexo与github写博客">
+<meta property="og:url" content="http://yoursite.com/2017/12/14/第二篇博客/index.html">
 <meta property="og:site_name" content="Miffy Chen&#39;Blog">
-<meta property="og:updated_time" content="2017-12-14T12:25:10.712Z">
+<meta property="og:description" content="安装Hexo第一步是安装Node.js(之前已经安装过了，可以利用cnpm安装hexo） npm install -g cnpm --registry=https://registry.npm.taobao.org 1. cd ~/Desktop 2. 在 GitHub 上新建一个空 repo，repo 名称是「你的用户名.github.io」 3. cnpm install -g hexo-cl">
+<meta property="og:updated_time" content="2017-12-14T13:50:16.694Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="开博大吉">
+<meta name="twitter:title" content="win10上利用hexo与github写博客">
+<meta name="twitter:description" content="安装Hexo第一步是安装Node.js(之前已经安装过了，可以利用cnpm安装hexo） npm install -g cnpm --registry=https://registry.npm.taobao.org 1. cd ~/Desktop 2. 在 GitHub 上新建一个空 repo，repo 名称是「你的用户名.github.io」 3. cnpm install -g hexo-cl">
   
     <link rel="alternate" href="/atom.xml" title="Miffy Chen&#39;Blog" type="application/atom+xml">
   
@@ -60,10 +63,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-开博大吉" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-第二篇博客" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/12/14/开博大吉/" class="article-date">
-  <time datetime="2017-12-14T12:25:10.000Z" itemprop="datePublished">2017-12-14</time>
+    <a href="/2017/12/14/第二篇博客/" class="article-date">
+  <time datetime="2017-12-14T12:44:04.000Z" itemprop="datePublished">2017-12-14</time>
 </a>
     
   </div>
@@ -74,7 +77,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      开博大吉
+      win10上利用hexo与github写博客
     </h1>
   
 
@@ -82,11 +85,28 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h1><pre><code>第一步是安装Node.js(之前已经安装过了，可以利用cnpm安装hexo）
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+1. cd ~/Desktop
+2. 在 GitHub 上新建一个空 repo，repo 名称是「你的用户名.github.io」
+3. cnpm install -g hexo-cli，安装 Hexo
+4. hexo init myBlog
+5. cd myBlog
+6. cnpm i
+7. hexo new 博客名，看到一个md文件路径
+8. start xxxxxxxxxxxxxxxxxxx.md，把xxx路径中的\都换成/
+9. start _config.yml编辑网站配置
+10. cnpm install hexo-deployer-git --save，安装 git 部署插件
+11. hexo deploy
+12. 进入「你的用户名.github.io」对应的 repo，打开 GitHub Pages 功能
+</code></pre><h2 id="hexo本地预览"><a href="#hexo本地预览" class="headerlink" title="hexo本地预览"></a>hexo本地预览</h2><pre><code>hexo s -g 
+然后在浏览器输入localhost：4000就可以看见了。
+</code></pre><h1 id="博客完成啦"><a href="#博客完成啦" class="headerlink" title="博客完成啦"></a>博客完成啦</h1><p>   可以自己随意换主题。</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/14/开博大吉/" data-id="cjb6jmvea000054cmxcsewf8g" class="article-share-link">Compartir</a>
+      <a data-url="http://yoursite.com/2017/12/14/第二篇博客/" data-id="cjb6jmvh8000154cmgrstlent" class="article-share-link">Compartir</a>
       
       
     </footer>
@@ -95,19 +115,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/12/14/第二篇博客/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Nuevo</strong>
-      <div class="article-nav-title">
-        
-          win10上利用hexo与github写博客
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/12/14/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/12/14/开博大吉/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Viejo</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">开博大吉</div>
     </a>
   
 </nav>
