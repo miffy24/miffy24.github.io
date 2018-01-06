@@ -6,17 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Miffy Chen&#39;Blog</title>
+  <title>Node.js Server | Miffy Chen&#39;Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="我在苏州···">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Miffy Chen&#39;Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Node.js Server">
+<meta property="og:url" content="http://yoursite.com/2017/12/18/Server/index.html">
 <meta property="og:site_name" content="Miffy Chen&#39;Blog">
 <meta property="og:description" content="我在苏州···">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-12-21T14:17:05.398Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Miffy Chen&#39;Blog">
+<meta name="twitter:title" content="Node.js Server">
 <meta name="twitter:description" content="我在苏州···">
   
     <link rel="alternative" href="/atom.xml" title="Miffy Chen&#39;Blog" type="application/atom+xml">
@@ -157,132 +158,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-初学html" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Server" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/22/初学html/">初学html</a>
-    </h1>
-  
-
-        
-        <a href="/2017/12/22/初学html/" class="archive-article-date">
-  	<time datetime="2017-12-22T12:22:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="初识HTML"><a href="#初识HTML" class="headerlink" title="初识HTML"></a>初识HTML</h2><p>HTML（HyperText Markup Language，超文本标记语言）是构成Web世界的基石，HTML 规范是由W3C制定的.而万维网联盟（W3C）是由蒂姆·伯纳斯-李于1994年10月离开欧洲核子研究中心（CERN）后成立。</p>
-<h2 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h2><h3 id="一、-iframe标签（不常用了）"><a href="#一、-iframe标签（不常用了）" class="headerlink" title="一、 iframe标签（不常用了）"></a>一、 iframe标签（不常用了）</h3><p><code>&lt;iframe&gt;</code>表示嵌套的浏览上下文，将另一个HTML嵌入到当前页面。iframe默认宽高，可以用css。iframe很卡很慢，相当于新开一个窗口。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src=&quot;#&quot; frameborder=&quot;0&quot; name=&quot;aaa&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">&lt;a target=&quot;aaa&quot; href=&quot;http://qq.com&quot;&gt;QQ&lt;/a&gt;</span><br><span class="line">&lt;a target=&quot;aaa&quot; href=&quot;http://baidu.com&quot;&gt;QQ&lt;/a&gt;</span><br><span class="line">&lt;!-- a标签在name为aaa的窗口打开 --&gt;</span><br></pre></td></tr></table></figure></p>
-<h3 id="二、-a标签"><a href="#二、-a标签" class="headerlink" title="二、 a标签"></a>二、 a标签</h3><p><code>&lt;a&gt;</code> 元素  (或锚元素) 可以创建一个到其他网页、文件、同一页面内的位置、电子邮件地址或任何其他URL的超链接。</p>
-<ol>
-<li><code>target</code>该属性指定在何处显示链接的资源,有四种:</li>
-</ol>
-<ul>
-<li><code>_self</code>: 当前页面加载。</li>
-<li><code>_blank</code>: 新窗口打开。</li>
-<li><code>_parent</code>: （父级）加载响应到当前框架的HTML4父框架或当前的HTML5浏览上下文的父浏览上下文。如果没有parent框架或者浏览上下文，此选项的行为方式相同_self。</li>
-<li><code>_top</code>:（顶级窗口） HTML5中：加载响应进入顶层浏览上下文（即，浏览上下文，它是当前的一个的祖先，并且没有parent）。如果没有parent框架或者浏览上下文，此选项的行为方式相同_self。</li>
-</ul>
-<ol>
-<li><code>herf</code>定义一个超文本链接来源,绝对路径，相对路径，代码。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// qq.com</span><br><span class="line">#xxx ?name=aaa ./xx.html</span><br><span class="line">javascript:alert(1);</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<ul>
-<li><code>&lt;a href=&quot;qq.com&quot;&gt;QQ&lt;/a&gt;</code> 不会去qq网页,其实是个文件</li>
-<li><code>&lt;a href=&quot;qq.com&quot;&gt;QQ&lt;/a&gt;</code>  链接返回到页面顶部。</li>
-<li><p><code>&lt;a href=&quot;//qq.com&quot;&gt;QQ&lt;/a&gt;</code> 显示 file://qq.com/，当前文件是什么协议，就是什么协议。如果想要预览它一种是上传到github上，另一种是加个小工具，只需要按下边代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm i -g http-server</span><br><span class="line">http-server -c-1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>&lt;a href=&quot;&quot;&gt;QQ&lt;/a&gt;//刷新页面</code></p>
-</li>
-<li><code>&lt;a href=&quot;xx.html&quot;&gt;QQ&lt;/a&gt;// 直接到xx.html</code></li>
-<li><code>&lt;a href=&quot;#hiih&quot;&gt;QQ&lt;/a&gt;//不发起请求，页面内跳转</code></li>
-<li><code>&lt;a href=&quot;?name=ccc&quot;&gt;QQ&lt;/a&gt;//?name=ccc到当前路径后边，发起get请求</code></li>
-<li>javascript伪协议(//想写一个a标签，但是希望a标签不要跳转)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;javascript: ;&quot;&gt;QQ&lt;/a&gt;</span><br><span class="line">&lt;a href=&quot;javascript: alert(1);&quot;&gt;QQ&lt;/a&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<ol>
-<li>download属性<br>点击了使其不打开链接。而是下载当前页面的HTML。还有种下载是通过http响应设置content-type实现。</li>
-</ol>
-<h3 id="三、-form标签"><a href="#三、-form标签" class="headerlink" title="三、 form标签"></a>三、 form标签</h3><p><code>form</code>标签跳转页面是post请求</p>
-<ul>
-<li>form表单有两个方法，一种就是get，get会把参数放到查询参数里边,还有一种是method=”post”，post是放到第四部分。</li>
-<li>form的target属性与a标签一样。</li>
-<li><p>action 指定请求路径</p>
-<h3 id="四、-input-button标签"><a href="#四、-input-button标签" class="headerlink" title="四、 input/button标签"></a>四、 input/button标签</h3><p> form表单里，button没写type会自动升级为提交按钮。<br> type改为submit也可以提交，其他type不能提交。</p>
-<ul>
-<li>区别在于这俩个标签是否为空标签，input没有子元素，button有。</li>
-<li><code>input</code>type 属性有很多<code>button</code>,<code>checkbox</code>,<code>radio</code>,<code>text</code>等。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"> &lt;label&gt;密码&lt;input type=&quot;password&quot; name=&quot;username&quot; &gt;&lt;/label&gt;</span><br><span class="line">  //单选框  </span><br><span class="line"> &lt;label&gt;Yes&lt;input type=&quot;radio&quot; name=&quot;Yes&quot; &gt;&lt;/label&gt;</span><br><span class="line">&lt;label&gt;No&lt;input type=&quot;radio&quot; name=&quot;No&quot; &gt;&lt;/label&gt;</span><br><span class="line">//多选框</span><br><span class="line">&lt;label&gt;fruit&lt;input type=&quot;checkbox&quot; name=&quot;fruit&quot; value=&quot;peach&quot;&gt;peach&lt;/label&gt;x</span><br><span class="line">//select创建选项菜单,其multiple属性可以多选</span><br><span class="line">&lt;select name=&quot;select&quot; multiple&gt;</span><br><span class="line">  &lt;option value=&quot;value1&quot;&gt;Value 1&lt;/option&gt; </span><br><span class="line">  &lt;option value=&quot;value2&quot; selected&gt;Value 2&lt;/option&gt;</span><br><span class="line">  &lt;option value=&quot;value3&quot;&gt;Value 3&lt;/option&gt;</span><br><span class="line">&lt;/select&gt;</span><br><span class="line">//textarea多行文本用css固定大小，还可以用rows和cols，一般用css。</span><br><span class="line">&lt;textarea style=&quot;resize:none;width:100px;height:100px&quot; name=&quot;textarea&quot; rows=&quot;10&quot; cols=&quot;50&quot;&gt;Write something here&lt;/textarea&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="五、table标签"><a href="#五、table标签" class="headerlink" title="五、table标签"></a>五、table标签</h3><p>table 有三个元素tbody,thead,tfoot</p>
-<ul>
-<li>td 是table data</li>
-<li>tr 是table row<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">&lt;table border=&quot;1&quot; &gt;</span><br><span class="line">  &lt;colgroup&gt;</span><br><span class="line">    &lt;col width=100&gt;</span><br><span class="line">     &lt;col width=100 bgcolor =red&gt;</span><br><span class="line">     &lt;col width=100&gt;</span><br><span class="line">     &lt;col width=100&gt;</span><br><span class="line">  &lt;/colgroup&gt;</span><br><span class="line">  &lt;thead&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">      &lt;th&gt;项目&lt;/th&gt;</span><br><span class="line">      &lt;th&gt;姓名&lt;/th&gt;</span><br><span class="line">      &lt;th&gt;年级&lt;/th&gt;</span><br><span class="line">      &lt;th&gt;分数&lt;/th&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">  &lt;/thead&gt;</span><br><span class="line">  &lt;tbody&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">      &lt;th&gt;&lt;/th&gt;</span><br><span class="line">      &lt;td&gt;小米&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;一年级&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;98&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">     &lt;tr&gt;</span><br><span class="line">      &lt;th&gt;&lt;/th&gt;</span><br><span class="line">      &lt;td&gt;小吖&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;一年级&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;96&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">  &lt;/tbody&gt;</span><br><span class="line">  &lt;tfoot&gt;&lt;tr&gt;</span><br><span class="line">      &lt;th&gt;平均分&lt;/th&gt;</span><br><span class="line">      &lt;td&gt;&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;97&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">  &lt;/tfoot&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="六、空元素"><a href="#六、空元素" class="headerlink" title="六、空元素"></a>六、空元素</h3><p>在 HTML 中，通常在一个空元素上使用一个闭标签是无效的。，没有子元素<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;area&gt;,&lt;base&gt;,&lt;br&gt;,&lt;col&gt;,&lt;colgroup&gt; when the span is present,&lt;command&gt;,&lt;embed&gt;,&lt;hr&gt;,&lt;img&gt;,&lt;input&gt;,&lt;keygen&gt;,&lt;link&gt;,&lt;meta&gt;,&lt;param&gt;,&lt;source&gt;,&lt;track&gt;,&lt;wbr&gt;</span><br></pre></td></tr></table></figure></p>
-<h3 id="七、可替换元素"><a href="#七、可替换元素" class="headerlink" title="七、可替换元素"></a>七、可替换元素</h3><p> 典型的可替换元素有 <code>&lt;img&gt;</code>、 <code>&lt;object&gt;</code>、 <code>&lt;video&gt;</code> 和 表单元素，如<code>&lt;textarea&gt;</code>、 <code>&lt;input&gt;</code> 。 某些元素只在一些特殊情况下表现为可替换元素，例如 <code>&lt;audio&gt;</code> 和 <code>&lt;canvas&gt;</code>。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/22/初学html/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Server" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/18/Server/">Node.js Server</a>
+    <h1 class="article-title" itemprop="name">
+      Node.js Server
     </h1>
   
 
@@ -299,6 +182,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -306,16 +210,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/18/Server/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/12/18/Server/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/12/22/初学html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          初学html
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/12/16/http入门/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">http入门</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -335,336 +307,14 @@
 
 
 
-
   
-    <article id="post-http入门" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/16/http入门/">http入门</a>
-    </h1>
   
 
-        
-        <a href="/2017/12/16/http入门/" class="archive-article-date">
-  	<time datetime="2017-12-16T11:53:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="WWW的发明"><a href="#WWW的发明" class="headerlink" title="WWW的发明"></a>WWW的发明</h3><p> Tim Berners-Lee（李爵士） 在 1989 年至 1992 年间，发明了 WWW（World Wide Web），一种适用于全世界的网络。</p>
-<ul>
-<li>主要包含三个概念<ul>
-<li>URI（Uniform Resource Identifier）俗称网址</li>
-<li>HTTP（HyperText Transfer Protocol）俩电脑之间传输内容的协议。</li>
-<li>HTML(HyperText Markup Language)主要用作页面跳转。</li>
-</ul>
-</li>
-</ul>
-<h3 id="URI-Uniform-Resource-Identifier，统一资源标识符"><a href="#URI-Uniform-Resource-Identifier，统一资源标识符" class="headerlink" title="URI (Uniform Resource Identifier，统一资源标识符)"></a>URI (Uniform Resource Identifier，统一资源标识符)</h3><ul>
-<li>URI分为URN和URL，一般使用 URL 作为网址。</li>
-<li>URI用字符串标识某一互联网资源，而URL表示资源的地点。</li>
-</ul>
-<h4 id="URL-Uniform-Resource-Locator-统一资源定位符"><a href="#URL-Uniform-Resource-Locator-统一资源定位符" class="headerlink" title="URL (Uniform Resource Locator,统一资源定位符)"></a>URL (Uniform Resource Locator,统一资源定位符)</h4><ul>
-<li>URL包括协议，域名，路径，端口号，查询参数，锚点。</li>
-</ul>
-<h4 id="URN-Uniform-Resource-Name"><a href="#URN-Uniform-Resource-Name" class="headerlink" title="URN (Uniform Resource Name)"></a>URN (Uniform Resource Name)</h4><ul>
-<li>URN就是个名字，ISBN: 9787115275790 就是一个 URN，通过 URN 你可以确定一个「唯一的」资源</li>
-</ul>
-<h3 id="DNS（Domain-Name-System-域名系统）"><a href="#DNS（Domain-Name-System-域名系统）" class="headerlink" title="DNS（Domain Name System,域名系统）"></a>DNS（Domain Name System,域名系统）</h3><ul>
-<li>输入域名</li>
-<li>返回对应 IP</li>
-<li><p>通过以下俩种方式访问百度：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nslookup baidu.com</span><br><span class="line">ping baidu.com</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>还可以改变hosts文件来访问google</p>
-</li>
-</ul>
-<h3 id="请求与响应-Sever-Client-HTTP"><a href="#请求与响应-Sever-Client-HTTP" class="headerlink" title="请求与响应( Sever + Client + HTTP)"></a>请求与响应( Sever + Client + HTTP)</h3><ul>
-<li>浏览器负责发起请求\</li>
-<li>服务器在 80 端口接收请求</li>
-<li>服务器负责返回内容（响应）</li>
-<li>浏览器负责下载响应内容</li>
-<li><p>HTTP 的作用就是指导浏览器和服务器如何进行沟通。</p>
-<h4 id="请求与响应示例"><a href="#请求与响应示例" class="headerlink" title="请求与响应示例"></a>请求与响应示例</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -s -v -H &quot;Frank: xxx&quot; -- &quot;https://www.baidu.com&quot;</span><br></pre></td></tr></table></figure>
-<h5 id="请求内容为"><a href="#请求内容为" class="headerlink" title="请求内容为"></a>请求内容为</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> GET / HTTP/1.1</span><br><span class="line">Host: www.baidu.com</span><br><span class="line">User-Agent: curl/7.54.0</span><br><span class="line">Accept: */*</span><br><span class="line">Frank: xxx</span><br></pre></td></tr></table></figure>
-<h5 id="响应内容为"><a href="#响应内容为" class="headerlink" title="响应内容为"></a>响应内容为</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">HTTP/1.1 200 OK</span><br><span class="line">Accept-Ranges: bytes</span><br><span class="line">Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform</span><br><span class="line">Connection: Keep-Alive</span><br><span class="line">Content-Length: 2443</span><br><span class="line">Content-Type: text/html</span><br><span class="line">Date: Tue, 10 Oct 2017 09:14:05 GMT</span><br><span class="line">Etag: &quot;5886041d-98b&quot;</span><br><span class="line">Last-Modified: Mon, 23 Jan 2017 13:24:45 GMT</span><br><span class="line">Pragma: no-cache</span><br><span class="line">Server: bfe/1.0.8.18</span><br><span class="line">Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/</span><br><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;!--STATUS OK--&gt;&lt;html&gt; &lt;head&gt; 后面太长，省略了……</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="请求与响应格式"><a href="#请求与响应格式" class="headerlink" title="请求与响应格式"></a>请求与响应格式</h4><h5 id="请求的格式"><a href="#请求的格式" class="headerlink" title="请求的格式"></a>请求的格式</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1 动词 路径 协议/版本</span><br><span class="line">2 Key1: value1</span><br><span class="line">2 Key2: value2</span><br><span class="line">2 Key3: value3</span><br><span class="line">2 Content-Type: application/x-www-form-urlencoded</span><br><span class="line">2 Host: www.baidu.com</span><br><span class="line">2 User-Agent: curl/7.54.0</span><br><span class="line">3 </span><br><span class="line">4 要上传的数据</span><br></pre></td></tr></table></figure>
-<ol>
-<li>请求最多包含四部分，最少包含三部分。（也就是说第四部分可以为空）</li>
-<li>第三部分永远都是一个回车（\n）</li>
-<li>动词有 GET POST PUT PATCH DELETE HEAD OPTIONS 等</li>
-<li>这里的路径包括「查询参数」，但不包括「锚点」</li>
-<li>如果你没有写路径，那么路径默认为 /</li>
-<li>第 2 部分中的 Content-Type 标注了第 4 部分的格式</li>
-</ol>
-<h5 id="响应的格式"><a href="#响应的格式" class="headerlink" title="响应的格式"></a>响应的格式</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1 协议/版本号 状态码 状态解释</span><br><span class="line">2 Key1: value1</span><br><span class="line">2 Key2: value2</span><br><span class="line">2 Content-Length: 17931</span><br><span class="line">2 Content-Type: text/html</span><br><span class="line">3</span><br><span class="line">4 要下载的内容</span><br></pre></td></tr></table></figure>
-<p>状态码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1xx 信息状态码</span><br><span class="line">2xx 成功状态码</span><br><span class="line">3xx 重定向状态码</span><br><span class="line">4xx 客户端错误状态码</span><br><span class="line">5xx 服务端错误状态码</span><br></pre></td></tr></table></figure></p>
-<h4 id="用谷歌查看请求与响应"><a href="#用谷歌查看请求与响应" class="headerlink" title="用谷歌查看请求与响应"></a>用谷歌查看请求与响应</h4><ul>
-<li>请求：打开 Network，地址栏输入网址，在 Network 点击，查看 request，点击「view source」，可以看到请求的前三部分了，如果有请求的第四部分，那么在 FormData 或 Payload 里面可以看到</li>
-<li>响应：打开 Network，<br>输入网址，<br>选中第一个响应，<br>查看 Response Headers，点击「view source」，<br>你会看到响应的前两部分，<br>查看 Response 或者 Preview，你会看到响应的第 4 部分</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/16/http入门/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-第二篇博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/14/第二篇博客/">win10上利用hexo与github写博客</a>
-    </h1>
   
 
-        
-        <a href="/2017/12/14/第二篇博客/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:44:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h1><pre><code>第一步是安装Node.js(之前已经安装过了，可以利用cnpm安装hexo）
-npm install -g cnpm --registry=https://registry.npm.taobao.org
-1. cd ~/Desktop
-2. 在 GitHub 上新建一个空 repo，repo 名称是「你的用户名.github.io」
-3. cnpm install -g hexo-cli，安装 Hexo
-4. hexo init myBlog
-5. cd myBlog
-6. cnpm i
-7. hexo new 博客名，看到一个md文件路径
-8. start xxxxxxxxxxxxxxxxxxx.md，把xxx路径中的\都换成/
-9. start _config.yml编辑网站配置
-10. cnpm install hexo-deployer-git --save，安装 git 部署插件
-11. hexo deploy
-12. 进入「你的用户名.github.io」对应的 repo，打开 GitHub Pages 功能
-</code></pre><h2 id="hexo本地预览"><a href="#hexo本地预览" class="headerlink" title="hexo本地预览"></a>hexo本地预览</h2><pre><code>hexo s -g 
-然后在浏览器输入localhost：4000就可以看见了。
-</code></pre><h1 id="博客完成啦"><a href="#博客完成啦" class="headerlink" title="博客完成啦"></a>博客完成啦</h1><p>   可以自己随意换主题。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/14/第二篇博客/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-开博大吉" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/14/开博大吉/">开博大吉</a>
-    </h1>
   
 
-        
-        <a href="/2017/12/14/开博大吉/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:25:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/14/开博大吉/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/14/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2017/12/14/hello-world/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:21:39.182Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/14/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -687,8 +337,8 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
