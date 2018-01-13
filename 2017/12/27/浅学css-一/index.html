@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="前言css的出现是为了让文章内容和显示分隔开来，css带来了很多好处，文件可读性增强，我们可以自己决定文章的显示。">
+<meta name="description" content="前言&amp;emsp;&amp;emsp;css的出现是为了让文章内容和显示分隔开来，css带来了很多好处，文件可读性增强，我们可以自己决定文章的显示。 Normal Flow(文档流，很差劲的翻译) 文档流是一个很差劲的翻译(—.-) 文档流中内联元素默认从左到右，宽度不够则自动换行。 文档流中块级元素从上到下排列，每个元素占一行。 块级元素高度由其内部文档流中元素的高度的总和确定 float:left、po">
 <meta name="keywords" content="css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浅学css(一)">
 <meta property="og:url" content="http://yoursite.com/2017/12/27/浅学css-一/index.html">
 <meta property="og:site_name" content="Miffy Chen&#39;Blog">
-<meta property="og:description" content="前言css的出现是为了让文章内容和显示分隔开来，css带来了很多好处，文件可读性增强，我们可以自己决定文章的显示。">
+<meta property="og:description" content="前言&amp;emsp;&amp;emsp;css的出现是为了让文章内容和显示分隔开来，css带来了很多好处，文件可读性增强，我们可以自己决定文章的显示。 Normal Flow(文档流，很差劲的翻译) 文档流是一个很差劲的翻译(—.-) 文档流中内联元素默认从左到右，宽度不够则自动换行。 文档流中块级元素从上到下排列，每个元素占一行。 块级元素高度由其内部文档流中元素的高度的总和确定 float:left、po">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-06T13:59:04.953Z">
+<meta property="og:updated_time" content="2018-01-13T13:13:14.178Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅学css(一)">
-<meta name="twitter:description" content="前言css的出现是为了让文章内容和显示分隔开来，css带来了很多好处，文件可读性增强，我们可以自己决定文章的显示。">
+<meta name="twitter:description" content="前言&amp;emsp;&amp;emsp;css的出现是为了让文章内容和显示分隔开来，css带来了很多好处，文件可读性增强，我们可以自己决定文章的显示。 Normal Flow(文档流，很差劲的翻译) 文档流是一个很差劲的翻译(—.-) 文档流中内联元素默认从左到右，宽度不够则自动换行。 文档流中块级元素从上到下排列，每个元素占一行。 块级元素高度由其内部文档流中元素的高度的总和确定 float:left、po">
 
 
 
@@ -197,16 +197,6 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
           </a>
         </li>
       
@@ -341,7 +331,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  49
+                  625
                 </span>
               
 
@@ -357,7 +347,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -378,7 +368,38 @@
       
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>css的出现是为了让文章内容和显示分隔开来，css带来了很多好处，文件可读性增强，我们可以自己决定文章的显示。</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>&emsp;&emsp;css的出现是为了让文章内容和显示分隔开来，css带来了很多好处，文件可读性增强，我们可以自己决定文章的显示。</p>
+<h1 id="Normal-Flow-文档流，很差劲的翻译"><a href="#Normal-Flow-文档流，很差劲的翻译" class="headerlink" title="Normal Flow(文档流，很差劲的翻译)"></a>Normal Flow(文档流，很差劲的翻译)</h1><ul>
+<li>文档流是一个很差劲的翻译(—.-)<ul>
+<li>文档流中内联元素默认从左到右，宽度不够则自动换行。</li>
+<li>文档流中块级元素从上到下排列，每个元素占一行。</li>
+<li><font color="orange">块级元素高度由其内部文档流中元素的高度的总和确定</font></li>
+<li><code>float:left、position:absolute、position:fixed</code>可以使元素脱离文档流。</li>
+<li>如果div里是内联元素，所有内联元素行高加起来，宽度自适应。</li>
+<li>内联元素宽度受margin、padding<br>、border影响，高度由行高决定。<h1 id="让导航栏左移"><a href="#让导航栏左移" class="headerlink" title="让导航栏左移"></a>让导航栏左移</h1></li>
+</ul>
+</li>
+</ul>
+<p>&emsp;&emsp;<code>inline</code>和<code>inline-block</code>元素有任何看不见的字符就是空格因此不要用<code>inline</code>元素，或者<code>overflow</code>用浮动,父元素添加clearfix类清除浮动<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">ul&gt;li&#123;</span><br><span class="line">float:left;</span><br><span class="line">&#125;</span><br><span class="line">.clearfix::after&#123;</span><br><span class="line">  content:&apos;&apos;;</span><br><span class="line">  display:block;</span><br><span class="line">  clear:both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="控制换行"><a href="#控制换行" class="headerlink" title="控制换行"></a>控制换行</h1><ul>
+<li>单词中断所有，控制分行<br><code>word-break:break-all</code></li>
+<li>文字溢出<ol>
+<li>只出现一行文本，多出的文字表示省略号 </li>
+<li>多行文本溢出<br>搜索 <code>css multi line text ellpsis</code></li>
+</ol>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//一行</span><br><span class="line">div&#123;</span><br><span class="line">  white-space:nowrap; //控制不分行</span><br><span class="line">  overflow:hidden;</span><br><span class="line">  text-overflow:ellipsis;//变成省略号</span><br><span class="line">&#125;</span><br><span class="line">  //多行</span><br><span class="line">  div&#123;</span><br><span class="line">  display: -webkit-box;</span><br><span class="line">  -webkit-line-clamp: 3;</span><br><span class="line">  -webkit-box-orient: vertical; </span><br><span class="line">   overflow:hidden;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h1 id="文字俩端对齐"><a href="#文字俩端对齐" class="headerlink" title="文字俩端对齐"></a>文字俩端对齐</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">/*html中加入如下内容*/</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;span&gt;姓名&lt;/span&gt;&lt;br&gt;</span><br><span class="line">  &lt;span&gt;联系方式&lt;/span&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">  /*css*/</span><br><span class="line">  div&#123;</span><br><span class="line">  font-size:20px;</span><br><span class="line">&#125;</span><br><span class="line">span&#123;</span><br><span class="line">  width:5em;</span><br><span class="line">  display: inline-block;</span><br><span class="line">  text-align:justify;</span><br><span class="line">  line-height:20px;</span><br><span class="line">  height:20px;</span><br><span class="line">  overflow:hidden;</span><br><span class="line">&#125;</span><br><span class="line">span::after&#123;</span><br><span class="line">  content:&apos;&apos;;</span><br><span class="line">  display: inline-block;</span><br><span class="line">  width:100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="文字垂直居中"><a href="#文字垂直居中" class="headerlink" title="文字垂直居中"></a>文字垂直居中</h1><p>&emsp;&emsp;不要用height和line-height,会产生bug。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">  line-height:24px;</span><br><span class="line">   padding:8px 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="margin-合并"><a href="#margin-合并" class="headerlink" title="margin 合并"></a>margin 合并</h1><p>&emsp;&emsp;如果padding或border挡在父子元素之间，margin就不会合并<br>overflow:hidden也不会合并（只是上下合并，不推荐）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class= &quot;dad&quot;&gt;</span><br><span class="line">  &lt;div class= &quot;son&quot;&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">.son&#123;</span><br><span class="line">  border:15px solid red;</span><br><span class="line">  padding: 10px;</span><br><span class="line">  margin:10px;</span><br><span class="line">&#125;</span><br><span class="line">.dad&#123;</span><br><span class="line">  outline:1px solid green;</span><br><span class="line">  border-top:10px solid green;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure></p>
+<h1 id="div里中div绝对居中"><a href="#div里中div绝对居中" class="headerlink" title="div里中div绝对居中"></a>div里中div绝对居中</h1><ol>
+<li>margin:auto和定宽定高一起用</li>
+<li><p>宽高不确定用flex</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">display:flex;</span><br><span class="line">justify-content:center;</span><br><span class="line">align-items:center;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="实现一比一div"><a href="#实现一比一div" class="headerlink" title="实现一比一div"></a>实现一比一div</h1><p>&emsp;&emsp;宽度自适应，高度为0，padding将高度撑起来。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.one&#123;</span><br><span class="line">  padding-top:100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -571,7 +592,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Normal-Flow-文档流，很差劲的翻译"><span class="nav-number">2.</span> <span class="nav-text"><a href="#Normal-Flow-&#x6587;&#x6863;&#x6D41;&#xFF0C;&#x5F88;&#x5DEE;&#x52B2;&#x7684;&#x7FFB;&#x8BD1;" class="headerlink" title="Normal Flow(&#x6587;&#x6863;&#x6D41;&#xFF0C;&#x5F88;&#x5DEE;&#x52B2;&#x7684;&#x7FFB;&#x8BD1;)"></a>Normal Flow(&#x6587;&#x6863;&#x6D41;&#xFF0C;&#x5F88;&#x5DEE;&#x52B2;&#x7684;&#x7FFB;&#x8BD1;)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#让导航栏左移"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x8BA9;&#x5BFC;&#x822A;&#x680F;&#x5DE6;&#x79FB;" class="headerlink" title="&#x8BA9;&#x5BFC;&#x822A;&#x680F;&#x5DE6;&#x79FB;"></a>&#x8BA9;&#x5BFC;&#x822A;&#x680F;&#x5DE6;&#x79FB;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#控制换行"><span class="nav-number">4.</span> <span class="nav-text"><a href="#&#x63A7;&#x5236;&#x6362;&#x884C;" class="headerlink" title="&#x63A7;&#x5236;&#x6362;&#x884C;"></a>&#x63A7;&#x5236;&#x6362;&#x884C;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文字俩端对齐"><span class="nav-number">5.</span> <span class="nav-text"><a href="#&#x6587;&#x5B57;&#x4FE9;&#x7AEF;&#x5BF9;&#x9F50;" class="headerlink" title="&#x6587;&#x5B57;&#x4FE9;&#x7AEF;&#x5BF9;&#x9F50;"></a>&#x6587;&#x5B57;&#x4FE9;&#x7AEF;&#x5BF9;&#x9F50;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文字垂直居中"><span class="nav-number">6.</span> <span class="nav-text"><a href="#&#x6587;&#x5B57;&#x5782;&#x76F4;&#x5C45;&#x4E2D;" class="headerlink" title="&#x6587;&#x5B57;&#x5782;&#x76F4;&#x5C45;&#x4E2D;"></a>&#x6587;&#x5B57;&#x5782;&#x76F4;&#x5C45;&#x4E2D;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#margin-合并"><span class="nav-number">7.</span> <span class="nav-text"><a href="#margin-&#x5408;&#x5E76;" class="headerlink" title="margin &#x5408;&#x5E76;"></a>margin &#x5408;&#x5E76;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#div里中div绝对居中"><span class="nav-number">8.</span> <span class="nav-text"><a href="#div&#x91CC;&#x4E2D;div&#x7EDD;&#x5BF9;&#x5C45;&#x4E2D;" class="headerlink" title="div&#x91CC;&#x4E2D;div&#x7EDD;&#x5BF9;&#x5C45;&#x4E2D;"></a>div&#x91CC;&#x4E2D;div&#x7EDD;&#x5BF9;&#x5C45;&#x4E2D;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实现一比一div"><span class="nav-number">9.</span> <span class="nav-text"><a href="#&#x5B9E;&#x73B0;&#x4E00;&#x6BD4;&#x4E00;div" class="headerlink" title="&#x5B9E;&#x73B0;&#x4E00;&#x6BD4;&#x4E00;div"></a>&#x5B9E;&#x73B0;&#x4E00;&#x6BD4;&#x4E00;div</span></a></li></ol></div>
             
 
           </div>
@@ -605,7 +626,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">2.6k</span>
+    <span title="Site words total count">3.2k</span>
   
 </div>
 
