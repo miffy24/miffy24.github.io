@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="前言(什么是JavaScript) JavaScript 是一种编程语言，允许你创建动态更新的内容，控制多媒体，图像动画，和一些其他的东西。好吧，虽然不是一切，但是它的神奇之处是你能够用几行JavaScript代码就能实现。">
+<meta name="description" content="前言(什么是JavaScript) JavaScript 是一种编程语言，允许你创建动态更新的内容，控制多媒体，图像动画，和一些其他的东西。好吧，虽然不是一切，但是它的神奇之处是你能够用几行JavaScript代码就能实现。  1. 语句  语句就是为了完成某种任务而进行的操作，以分号结尾，而表达式则是得到值的计算式。    12var a = 1 + 3 //语句   1 + 3 是表达式 2.">
 <meta name="keywords" content="javaScript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="浅学JavaScript（一）">
+<meta property="og:title" content="浅学JavaScript（一）之基本语法">
 <meta property="og:url" content="http://yoursite.com/2018/01/14/浅学JavaScript/index.html">
 <meta property="og:site_name" content="Miffy Chen&#39;Blog">
-<meta property="og:description" content="前言(什么是JavaScript) JavaScript 是一种编程语言，允许你创建动态更新的内容，控制多媒体，图像动画，和一些其他的东西。好吧，虽然不是一切，但是它的神奇之处是你能够用几行JavaScript代码就能实现。">
+<meta property="og:description" content="前言(什么是JavaScript) JavaScript 是一种编程语言，允许你创建动态更新的内容，控制多媒体，图像动画，和一些其他的东西。好吧，虽然不是一切，但是它的神奇之处是你能够用几行JavaScript代码就能实现。  1. 语句  语句就是为了完成某种任务而进行的操作，以分号结尾，而表达式则是得到值的计算式。    12var a = 1 + 3 //语句   1 + 3 是表达式 2.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-14T05:53:00.234Z">
+<meta property="og:updated_time" content="2018-01-15T13:53:14.957Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="浅学JavaScript（一）">
-<meta name="twitter:description" content="前言(什么是JavaScript) JavaScript 是一种编程语言，允许你创建动态更新的内容，控制多媒体，图像动画，和一些其他的东西。好吧，虽然不是一切，但是它的神奇之处是你能够用几行JavaScript代码就能实现。">
+<meta name="twitter:title" content="浅学JavaScript（一）之基本语法">
+<meta name="twitter:description" content="前言(什么是JavaScript) JavaScript 是一种编程语言，允许你创建动态更新的内容，控制多媒体，图像动画，和一些其他的东西。好吧，虽然不是一切，但是它的神奇之处是你能够用几行JavaScript代码就能实现。  1. 语句  语句就是为了完成某种任务而进行的操作，以分号结尾，而表达式则是得到值的计算式。    12var a = 1 + 3 //语句   1 + 3 是表达式 2.">
 
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <title>浅学JavaScript（一） | Miffy Chen'Blog</title>
+  <title>浅学JavaScript（一）之基本语法 | Miffy Chen'Blog</title>
   
 
 
@@ -260,7 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">浅学JavaScript（一）</h1>
+          <h1 class="post-title" itemprop="name headline">浅学JavaScript（一）之基本语法</h1>
         
 
         <div class="post-meta">
@@ -282,6 +282,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/" itemprop="url" rel="index">
+                    <span itemprop="name">learn</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -309,7 +331,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  73
+                  674
                 </span>
               
 
@@ -325,7 +347,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -349,7 +371,36 @@
         <h1 id="前言-什么是JavaScript"><a href="#前言-什么是JavaScript" class="headerlink" title="前言(什么是JavaScript)"></a>前言(什么是JavaScript)</h1><blockquote>
 <p>JavaScript 是一种编程语言，允许你创建动态更新的内容，控制多媒体，图像动画，和一些其他的东西。好吧，虽然不是一切，但是它的神奇之处是你能够用几行JavaScript代码就能实现。</p>
 </blockquote>
-
+<h2 id="1-语句"><a href="#1-语句" class="headerlink" title="1. 语句"></a>1. 语句</h2><blockquote>
+<p> 语句就是为了完成某种任务而进行的操作，以分号结尾，而表达式则是得到值的计算式。</p>
+</blockquote>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span> + <span class="number">3</span> <span class="comment">//语句</span></span><br><span class="line">   <span class="number">1</span> + <span class="number">3</span> 是表达式</span><br></pre></td></tr></table></figure>
+<h2 id="2-变量"><a href="#2-变量" class="headerlink" title="2. 变量"></a>2. 变量</h2><blockquote>
+<p>变量是对“值”的具名引用。变量就是为“值”起名，然后引用这个名字，就等同于引用这个值，变量的名字是变量名。</p>
+</blockquote>
+<h3 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h3><ul>
+<li><code>var</code> 声明一个变量，可将其初始化为一个值。</li>
+<li><code>let</code> 声明一个块作用域的局部变量可将其初始化为一个值。</li>
+<li><code>const</code>声明一个只读的常量。<h3 id="变量声明提升"><a href="#变量声明提升" class="headerlink" title="变量声明提升"></a>变量声明提升</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">console.log(a);</span><br><span class="line">var a = 1;</span><br><span class="line">//实际上是下边的代码</span><br><span class="line">var a;</span><br><span class="line">console.log(a);</span><br><span class="line">a = 1;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="3-标识符"><a href="#3-标识符" class="headerlink" title="3. 标识符"></a>3. 标识符</h2><blockquote>
+<p>第一个字符，可以是任意 Unicode 字母（包括英文字母和其他语言的字母），以及美元符号（$）和下划线（_）。</p>
+<p>第二个字符及后面的字符，除了 Unicode 字母、美元符号和下划线，还可以用数字0-9。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">arg0</span><br><span class="line">_23</span><br><span class="line">$abc</span><br></pre></td></tr></table></figure>
+<h2 id="4-注释"><a href="#4-注释" class="headerlink" title="4. 注释"></a>4. 注释</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">单行注释 //</span><br><span class="line">多行注释&lt;!--xxx--&gt;</span><br><span class="line">e.g.</span><br><span class="line">x=1;&lt;!--x=2;</span><br><span class="line">--&gt; x=3;//只执行x=1</span><br></pre></td></tr></table></figure>
+<h2 id="5-区块"><a href="#5-区块" class="headerlink" title="5.区块"></a>5.区块</h2><blockquote>
+<p>JavaScript 使用大括号，将多个相关的语句组合在一起，称为“区块”（block）。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line">a<span class="comment">//1</span></span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h2 id="6-条件语句"><a href="#6-条件语句" class="headerlink" title="6.条件语句"></a>6.条件语句</h2><p>&emsp;&emsp;js提供if结构和switch结构，完成条件判断。</p>
+<h3 id="6-1-if-结构"><a href="#6-1-if-结构" class="headerlink" title="6.1 if 结构"></a>6.1 if 结构</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(布尔值)</span><br><span class="line">语句;</span><br><span class="line"><span class="comment">//或者</span></span><br><span class="line"><span class="keyword">if</span> (布尔值) 语句;</span><br></pre></td></tr></table></figure>
+<h3 id="6-2-if…else结构"><a href="#6-2-if…else结构" class="headerlink" title="6.2 if…else结构"></a>6.2 if…else结构</h3><p>&emsp;&emsp;else代码块总是与离自己最近的那个if语句配对。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if(m === 3)&#123;</span><br><span class="line">    //满足条件执行</span><br><span class="line">&#125;else&#123;</span><br><span class="line">    //不满足时执行</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="6-3-switch结构"><a href="#6-3-switch结构" class="headerlink" title="6.3 switch结构"></a>6.3 switch结构</h3><p>&emsp;&emsp;根据fruit 值来选择执行相应的语句，若无符合的直接跳至default部分。break直接跳出switch循环，continue是停止本次循环，<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> (fruit) &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">"banana"</span>:</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">"apple"</span>:</span><br><span class="line">    <span class="comment">//</span></span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">    <span class="comment">//</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="6-4-三元运算符"><a href="#6-4-三元运算符" class="headerlink" title="6.4 三元运算符"></a>6.4 三元运算符</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(条件) ? 表达式<span class="number">1</span> : 表达式<span class="number">2</span></span><br></pre></td></tr></table></figure>
+<h2 id="7-循环语句"><a href="#7-循环语句" class="headerlink" title="7. 循环语句"></a>7. 循环语句</h2><h3 id="7-1-while语句"><a href="#7-1-while语句" class="headerlink" title="7.1 while语句"></a>7.1 while语句</h3><p>while的代码块部分，如果只有一条语句，可以省略大括号，否则就必须加上大括号。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(条件)</span><br><span class="line">    语句;</span><br><span class="line"><span class="keyword">while</span>(条件)语句;</span><br></pre></td></tr></table></figure></p>
+<h3 id="7-2-for-循环"><a href="#7-2-for-循环" class="headerlink" title="7.2 for 循环"></a>7.2 for 循环</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(初始化表达式;条件;递增表达式)&#123;</span><br><span class="line">    语句;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="7-3-do…while-循环"><a href="#7-3-do…while-循环" class="headerlink" title="7.3 do…while 循环"></a>7.3 do…while 循环</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">    语句</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">while</span>(条件);</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -388,8 +439,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/06/浅学css二/" rel="next" title="浅学css（二）">
-                <i class="fa fa-chevron-left"></i> 浅学css（二）
+              <a href="/2018/01/06/浅学css二/" rel="next" title="浅学css（二）之堆叠上下文">
+                <i class="fa fa-chevron-left"></i> 浅学css（二）之堆叠上下文
               </a>
             
           </div>
@@ -541,7 +592,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言-什么是JavaScript"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x524D;&#x8A00;-&#x4EC0;&#x4E48;&#x662F;JavaScript" class="headerlink" title="&#x524D;&#x8A00;(&#x4EC0;&#x4E48;&#x662F;JavaScript)"></a>&#x524D;&#x8A00;(&#x4EC0;&#x4E48;&#x662F;JavaScript)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言-什么是JavaScript"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x524D;&#x8A00;-&#x4EC0;&#x4E48;&#x662F;JavaScript" class="headerlink" title="&#x524D;&#x8A00;(&#x4EC0;&#x4E48;&#x662F;JavaScript)"></a>&#x524D;&#x8A00;(&#x4EC0;&#x4E48;&#x662F;JavaScript)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-语句"><span class="nav-number">1.1.</span> <span class="nav-text"><a href="#1-&#x8BED;&#x53E5;" class="headerlink" title="1. &#x8BED;&#x53E5;"></a>1. &#x8BED;&#x53E5;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-变量"><span class="nav-number">1.2.</span> <span class="nav-text"><a href="#2-&#x53D8;&#x91CF;" class="headerlink" title="2. &#x53D8;&#x91CF;"></a>2. &#x53D8;&#x91CF;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#变量声明"><span class="nav-number">1.2.1.</span> <span class="nav-text"><a href="#&#x53D8;&#x91CF;&#x58F0;&#x660E;" class="headerlink" title="&#x53D8;&#x91CF;&#x58F0;&#x660E;"></a>&#x53D8;&#x91CF;&#x58F0;&#x660E;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量声明提升"><span class="nav-number">1.2.2.</span> <span class="nav-text"><a href="#&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x63D0;&#x5347;" class="headerlink" title="&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x63D0;&#x5347;"></a>&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x63D0;&#x5347;</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-标识符"><span class="nav-number">1.3.</span> <span class="nav-text"><a href="#3-&#x6807;&#x8BC6;&#x7B26;" class="headerlink" title="3. &#x6807;&#x8BC6;&#x7B26;"></a>3. &#x6807;&#x8BC6;&#x7B26;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-注释"><span class="nav-number">1.4.</span> <span class="nav-text"><a href="#4-&#x6CE8;&#x91CA;" class="headerlink" title="4. &#x6CE8;&#x91CA;"></a>4. &#x6CE8;&#x91CA;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-区块"><span class="nav-number">1.5.</span> <span class="nav-text"><a href="#5-&#x533A;&#x5757;" class="headerlink" title="5.&#x533A;&#x5757;"></a>5.&#x533A;&#x5757;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-条件语句"><span class="nav-number">1.6.</span> <span class="nav-text"><a href="#6-&#x6761;&#x4EF6;&#x8BED;&#x53E5;" class="headerlink" title="6.&#x6761;&#x4EF6;&#x8BED;&#x53E5;"></a>6.&#x6761;&#x4EF6;&#x8BED;&#x53E5;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-1-if-结构"><span class="nav-number">1.6.1.</span> <span class="nav-text"><a href="#6-1-if-&#x7ED3;&#x6784;" class="headerlink" title="6.1 if &#x7ED3;&#x6784;"></a>6.1 if &#x7ED3;&#x6784;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2-if…else结构"><span class="nav-number">1.6.2.</span> <span class="nav-text"><a href="#6-2-if&#x2026;else&#x7ED3;&#x6784;" class="headerlink" title="6.2 if&#x2026;else&#x7ED3;&#x6784;"></a>6.2 if&#x2026;else&#x7ED3;&#x6784;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-3-switch结构"><span class="nav-number">1.6.3.</span> <span class="nav-text"><a href="#6-3-switch&#x7ED3;&#x6784;" class="headerlink" title="6.3 switch&#x7ED3;&#x6784;"></a>6.3 switch&#x7ED3;&#x6784;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-4-三元运算符"><span class="nav-number">1.6.4.</span> <span class="nav-text"><a href="#6-4-&#x4E09;&#x5143;&#x8FD0;&#x7B97;&#x7B26;" class="headerlink" title="6.4 &#x4E09;&#x5143;&#x8FD0;&#x7B97;&#x7B26;"></a>6.4 &#x4E09;&#x5143;&#x8FD0;&#x7B97;&#x7B26;</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-循环语句"><span class="nav-number">1.7.</span> <span class="nav-text"><a href="#7-&#x5FAA;&#x73AF;&#x8BED;&#x53E5;" class="headerlink" title="7. &#x5FAA;&#x73AF;&#x8BED;&#x53E5;"></a>7. &#x5FAA;&#x73AF;&#x8BED;&#x53E5;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1-while语句"><span class="nav-number">1.7.1.</span> <span class="nav-text"><a href="#7-1-while&#x8BED;&#x53E5;" class="headerlink" title="7.1 while&#x8BED;&#x53E5;"></a>7.1 while&#x8BED;&#x53E5;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-2-for-循环"><span class="nav-number">1.7.2.</span> <span class="nav-text"><a href="#7-2-for-&#x5FAA;&#x73AF;" class="headerlink" title="7.2 for &#x5FAA;&#x73AF;"></a>7.2 for &#x5FAA;&#x73AF;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-3-do…while-循环"><span class="nav-number">1.7.3.</span> <span class="nav-text"><a href="#7-3-do&#x2026;while-&#x5FAA;&#x73AF;" class="headerlink" title="7.3 do&#x2026;while &#x5FAA;&#x73AF;"></a>7.3 do&#x2026;while &#x5FAA;&#x73AF;</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -575,7 +626,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">3.3k</span>
+    <span title="Site words total count">4.2k</span>
   
 </div>
 

@@ -79,18 +79,28 @@
 
 
 
-<meta name="description" content="我在苏州···">
+<meta name="description" content="一、堆叠顺序 background border 块级 浮动 内联 z-index: 0 z-index: +;   如果是兄弟元素重叠，那么后面的盖在前面的身上。  background是被border覆盖的，代码如下：   内联元素是比border更上边,块级元素盖不住内联元素 后出现的内联元素盖住之前的内联元素 内联元素在浮动元素之上 浮动元素在块级元素之上 浮动元素里边的文字被外边的文字盖">
 <meta name="keywords" content="css">
 <meta property="og:type" content="article">
-<meta property="og:title" content="浅学css（二）">
+<meta property="og:title" content="浅学css（二）之堆叠上下文">
 <meta property="og:url" content="http://yoursite.com/2018/01/06/浅学css二/index.html">
 <meta property="og:site_name" content="Miffy Chen&#39;Blog">
-<meta property="og:description" content="我在苏州···">
+<meta property="og:description" content="一、堆叠顺序 background border 块级 浮动 内联 z-index: 0 z-index: +;   如果是兄弟元素重叠，那么后面的盖在前面的身上。  background是被border覆盖的，代码如下：   内联元素是比border更上边,块级元素盖不住内联元素 后出现的内联元素盖住之前的内联元素 内联元素在浮动元素之上 浮动元素在块级元素之上 浮动元素里边的文字被外边的文字盖">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-14T05:46:00.787Z">
+<meta property="og:image" content="https://i.loli.net/2018/01/15/5a5c52e54bdb3.png">
+<meta property="og:image" content="https://i.loli.net/2018/01/15/5a5c5b75bd89f.png">
+<meta property="og:image" content="https://i.loli.net/2018/01/15/5a5c5ca27dbc5.png">
+<meta property="og:image" content="https://i.loli.net/2018/01/15/5a5c5e6b589db.png">
+<meta property="og:image" content="https://i.loli.net/2018/01/15/5a5c5f071bbba.png">
+<meta property="og:image" content="https://i.loli.net/2018/01/15/5a5c627bef406.png">
+<meta property="og:image" content="https://i.loli.net/2018/01/15/5a5c644ad574d.png">
+<meta property="og:image" content="https://i.loli.net/2018/01/15/5a5c65f803c7c.png">
+<meta property="og:image" content="https://i.loli.net/2018/01/15/5a5c59093fb1f.png">
+<meta property="og:updated_time" content="2018-01-15T11:58:23.371Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="浅学css（二）">
-<meta name="twitter:description" content="我在苏州···">
+<meta name="twitter:title" content="浅学css（二）之堆叠上下文">
+<meta name="twitter:description" content="一、堆叠顺序 background border 块级 浮动 内联 z-index: 0 z-index: +;   如果是兄弟元素重叠，那么后面的盖在前面的身上。  background是被border覆盖的，代码如下：   内联元素是比border更上边,块级元素盖不住内联元素 后出现的内联元素盖住之前的内联元素 内联元素在浮动元素之上 浮动元素在块级元素之上 浮动元素里边的文字被外边的文字盖">
+<meta name="twitter:image" content="https://i.loli.net/2018/01/15/5a5c52e54bdb3.png">
 
 
 
@@ -126,7 +136,7 @@
 
 
 
-  <title>浅学css（二） | Miffy Chen'Blog</title>
+  <title>浅学css（二）之堆叠上下文 | Miffy Chen'Blog</title>
   
 
 
@@ -260,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">浅学css（二）</h1>
+          <h1 class="post-title" itemprop="name headline">浅学css（二）之堆叠上下文</h1>
         
 
         <div class="post-meta">
@@ -331,7 +341,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0
+                  384
                 </span>
               
 
@@ -347,7 +357,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -368,7 +378,45 @@
       
 
       
-        
+        <h1 id="一、堆叠顺序"><a href="#一、堆叠顺序" class="headerlink" title="一、堆叠顺序"></a>一、堆叠顺序</h1><ol>
+<li>background</li>
+<li>border</li>
+<li>块级</li>
+<li>浮动</li>
+<li>内联</li>
+<li>z-index: 0</li>
+<li>z-index: +;</li>
+</ol>
+<ul>
+<li>如果是兄弟元素重叠，那么后面的盖在前面的身上。</li>
+</ul>
+<h2 id="background是被border覆盖的，代码如下："><a href="#background是被border覆盖的，代码如下：" class="headerlink" title="background是被border覆盖的，代码如下："></a>background是被border覆盖的，代码如下：</h2><p>  <img src="https://i.loli.net/2018/01/15/5a5c52e54bdb3.png" alt="堆叠1.png"></p>
+<h2 id="内联元素是比border更上边-块级元素盖不住内联元素"><a href="#内联元素是比border更上边-块级元素盖不住内联元素" class="headerlink" title="内联元素是比border更上边,块级元素盖不住内联元素"></a>内联元素是比border更上边,块级元素盖不住内联元素</h2><p><img src="https://i.loli.net/2018/01/15/5a5c5b75bd89f.png" alt="堆叠2.PNG"></p>
+<h2 id="后出现的内联元素盖住之前的内联元素"><a href="#后出现的内联元素盖住之前的内联元素" class="headerlink" title="后出现的内联元素盖住之前的内联元素"></a>后出现的内联元素盖住之前的内联元素</h2><p><img src="https://i.loli.net/2018/01/15/5a5c5ca27dbc5.png" alt="堆叠3.png"></p>
+<h2 id="内联元素在浮动元素之上"><a href="#内联元素在浮动元素之上" class="headerlink" title="内联元素在浮动元素之上"></a>内联元素在浮动元素之上</h2><p><img src="https://i.loli.net/2018/01/15/5a5c5e6b589db.png" alt="堆叠4.png"></p>
+<h2 id="浮动元素在块级元素之上"><a href="#浮动元素在块级元素之上" class="headerlink" title="浮动元素在块级元素之上"></a>浮动元素在块级元素之上</h2><p><img src="https://i.loli.net/2018/01/15/5a5c5f071bbba.png" alt="堆叠5.png"></p>
+<h2 id="浮动元素里边的文字被外边的文字盖住"><a href="#浮动元素里边的文字被外边的文字盖住" class="headerlink" title="浮动元素里边的文字被外边的文字盖住"></a>浮动元素里边的文字被外边的文字盖住</h2><p><img src="https://i.loli.net/2018/01/15/5a5c627bef406.png" alt="堆叠6.png"></p>
+<h2 id="position-relative可以盖住float"><a href="#position-relative可以盖住float" class="headerlink" title="position:relative可以盖住float"></a>position:relative可以盖住float</h2><p><img src="https://i.loli.net/2018/01/15/5a5c644ad574d.png" alt="堆叠7.PNG"></p>
+<h2 id="z-index"><a href="#z-index" class="headerlink" title="z-index"></a>z-index</h2><p>&emsp;&emsp;没加<code>z-index：1</code>之前黄色覆盖绿色，黄色的<code>z-index</code>为auto所以绿色将黄色覆盖，若黄色<code>z-index</code>为2则黄色覆盖绿色。<br><img src="https://i.loli.net/2018/01/15/5a5c65f803c7c.png" alt="堆叠8.png"></p>
+<h1 id="堆叠顺序图"><a href="#堆叠顺序图" class="headerlink" title="堆叠顺序图"></a>堆叠顺序图</h1><blockquote>
+<p><img src="https://i.loli.net/2018/01/15/5a5c59093fb1f.png" alt="堆叠.png"></p>
+<h1 id="二、堆叠上下文-摘自mdn"><a href="#二、堆叠上下文-摘自mdn" class="headerlink" title="二、堆叠上下文(摘自mdn)"></a>二、堆叠上下文(摘自mdn)</h1><p>文档中的层叠上下文由满足以下任意一个条件的元素形成：</p>
+<ol>
+<li>根元素 (HTML),</li>
+<li>z-index 值不为 “auto”的 绝对/相对定位，</li>
+<li>一个 z-index 值不为 “auto”的 flex 项目 (flex item)，即：父元素 display: flex|inline-flex，</li>
+<li>opacity 属性值小于 1 的元素（参考 the specification for opacity），</li>
+<li>transform 属性值不为 “none”的元素，</li>
+<li>mix-blend-mode 属性值不为 “normal”的元素，</li>
+<li>filter值不为“none”的元素，</li>
+<li>perspective值不为“none”的元素，</li>
+<li>isolation 属性被设置为 “isolate”的元素，</li>
+<li>position: fixed</li>
+<li>在 will-change 中指定了任意 CSS 属性，即便你没有直接指定这些属性的值（参考 这篇文章）</li>
+<li>-webkit-overflow-scrolling 属性被设置 “touch”的元素</li>
+</ol>
+</blockquote>
+
       
     </div>
     
@@ -417,8 +465,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/01/14/浅学JavaScript/" rel="prev" title="浅学JavaScript（一）">
-                浅学JavaScript（一） <i class="fa fa-chevron-right"></i>
+              <a href="/2018/01/14/浅学JavaScript/" rel="prev" title="浅学JavaScript（一）之基本语法">
+                浅学JavaScript（一）之基本语法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -471,8 +519,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -546,6 +603,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、堆叠顺序"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x4E00;&#x3001;&#x5806;&#x53E0;&#x987A;&#x5E8F;" class="headerlink" title="&#x4E00;&#x3001;&#x5806;&#x53E0;&#x987A;&#x5E8F;"></a>&#x4E00;&#x3001;&#x5806;&#x53E0;&#x987A;&#x5E8F;</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#background是被border覆盖的，代码如下："><span class="nav-number">1.1.</span> <span class="nav-text"><a href="#background&#x662F;&#x88AB;border&#x8986;&#x76D6;&#x7684;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;" class="headerlink" title="background&#x662F;&#x88AB;border&#x8986;&#x76D6;&#x7684;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;"></a>background&#x662F;&#x88AB;border&#x8986;&#x76D6;&#x7684;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内联元素是比border更上边-块级元素盖不住内联元素"><span class="nav-number">1.2.</span> <span class="nav-text"><a href="#&#x5185;&#x8054;&#x5143;&#x7D20;&#x662F;&#x6BD4;border&#x66F4;&#x4E0A;&#x8FB9;-&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x76D6;&#x4E0D;&#x4F4F;&#x5185;&#x8054;&#x5143;&#x7D20;" class="headerlink" title="&#x5185;&#x8054;&#x5143;&#x7D20;&#x662F;&#x6BD4;border&#x66F4;&#x4E0A;&#x8FB9;,&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x76D6;&#x4E0D;&#x4F4F;&#x5185;&#x8054;&#x5143;&#x7D20;"></a>&#x5185;&#x8054;&#x5143;&#x7D20;&#x662F;&#x6BD4;border&#x66F4;&#x4E0A;&#x8FB9;,&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x76D6;&#x4E0D;&#x4F4F;&#x5185;&#x8054;&#x5143;&#x7D20;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后出现的内联元素盖住之前的内联元素"><span class="nav-number">1.3.</span> <span class="nav-text"><a href="#&#x540E;&#x51FA;&#x73B0;&#x7684;&#x5185;&#x8054;&#x5143;&#x7D20;&#x76D6;&#x4F4F;&#x4E4B;&#x524D;&#x7684;&#x5185;&#x8054;&#x5143;&#x7D20;" class="headerlink" title="&#x540E;&#x51FA;&#x73B0;&#x7684;&#x5185;&#x8054;&#x5143;&#x7D20;&#x76D6;&#x4F4F;&#x4E4B;&#x524D;&#x7684;&#x5185;&#x8054;&#x5143;&#x7D20;"></a>&#x540E;&#x51FA;&#x73B0;&#x7684;&#x5185;&#x8054;&#x5143;&#x7D20;&#x76D6;&#x4F4F;&#x4E4B;&#x524D;&#x7684;&#x5185;&#x8054;&#x5143;&#x7D20;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内联元素在浮动元素之上"><span class="nav-number">1.4.</span> <span class="nav-text"><a href="#&#x5185;&#x8054;&#x5143;&#x7D20;&#x5728;&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x4E4B;&#x4E0A;" class="headerlink" title="&#x5185;&#x8054;&#x5143;&#x7D20;&#x5728;&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x4E4B;&#x4E0A;"></a>&#x5185;&#x8054;&#x5143;&#x7D20;&#x5728;&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x4E4B;&#x4E0A;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浮动元素在块级元素之上"><span class="nav-number">1.5.</span> <span class="nav-text"><a href="#&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x5728;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x4E4B;&#x4E0A;" class="headerlink" title="&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x5728;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x4E4B;&#x4E0A;"></a>&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x5728;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x4E4B;&#x4E0A;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浮动元素里边的文字被外边的文字盖住"><span class="nav-number">1.6.</span> <span class="nav-text"><a href="#&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x91CC;&#x8FB9;&#x7684;&#x6587;&#x5B57;&#x88AB;&#x5916;&#x8FB9;&#x7684;&#x6587;&#x5B57;&#x76D6;&#x4F4F;" class="headerlink" title="&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x91CC;&#x8FB9;&#x7684;&#x6587;&#x5B57;&#x88AB;&#x5916;&#x8FB9;&#x7684;&#x6587;&#x5B57;&#x76D6;&#x4F4F;"></a>&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x91CC;&#x8FB9;&#x7684;&#x6587;&#x5B57;&#x88AB;&#x5916;&#x8FB9;&#x7684;&#x6587;&#x5B57;&#x76D6;&#x4F4F;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#position-relative可以盖住float"><span class="nav-number">1.7.</span> <span class="nav-text"><a href="#position-relative&#x53EF;&#x4EE5;&#x76D6;&#x4F4F;float" class="headerlink" title="position:relative&#x53EF;&#x4EE5;&#x76D6;&#x4F4F;float"></a>position:relative&#x53EF;&#x4EE5;&#x76D6;&#x4F4F;float</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#z-index"><span class="nav-number">1.8.</span> <span class="nav-text"><a href="#z-index" class="headerlink" title="z-index"></a>z-index</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#堆叠顺序图"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x5806;&#x53E0;&#x987A;&#x5E8F;&#x56FE;" class="headerlink" title="&#x5806;&#x53E0;&#x987A;&#x5E8F;&#x56FE;"></a>&#x5806;&#x53E0;&#x987A;&#x5E8F;&#x56FE;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、堆叠上下文-摘自mdn"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x4E8C;&#x3001;&#x5806;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;-&#x6458;&#x81EA;mdn" class="headerlink" title="&#x4E8C;&#x3001;&#x5806;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;(&#x6458;&#x81EA;mdn)"></a>&#x4E8C;&#x3001;&#x5806;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;(&#x6458;&#x81EA;mdn)</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -573,7 +646,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">3.3k</span>
+    <span title="Site words total count">4.2k</span>
   
 </div>
 
